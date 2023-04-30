@@ -1,0 +1,55 @@
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 556px;
+}
+.benner__img-container{
+    position: absolute;
+    z-index: 5;
+}
+.banner__img{
+    width: 100%;
+    height: 556px;
+}
+.benner__text-conntainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+}
+.banner__title{
+    color: white!important;
+    z-index: 10;
+    text-align: center;
+}
+.banner__text{
+    color: var(--text-light);
+    z-index: 10;
+    text-align: center;
+}   
+.banner__btn{
+    margin-top: 10px;
+}
+
+
+@media (min-width: 576px){
+    .banner__title{
+        font-size: 6rem;
+    }
+}
+@media (min-width: 976px){
+    .banner{
+        justify-content: space-between;
+    }
+    .benner__img-container{
+        position: relative;
+        width: 60%;
+    }
+    .benner__text-conntainer{
+        align-items: start;
+    }
+}

@@ -1,0 +1,26 @@
+.services{
+    background-color: #FAFAFA;
+    padding: 96px 0;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+}
+.service-title{
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+@media (min-width : 696px){
+    .services-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (min-width : 996px){
+    .services-container{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

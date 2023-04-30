@@ -1,0 +1,40 @@
+.software{
+    padding: 96px 15px;
+}
+.software-item-container{
+    display: flex;
+    flex-direction: column;
+}
+.software-title{
+    text-align: center;
+    color: var(--title-color);
+    margin-bottom: 48px;
+}
+.software-img-container{
+    padding-top: 48px;
+}
+.software-img{
+    width: 100%;
+}
+.software-box-container{
+    padding: 48px 0px;
+}
+
+
+@media (min-width : 576px){
+    
+}
+@media (min-width : 768px){
+    .software-item-container{
+        flex-direction: row;
+        align-items: center;
+    }
+    .software-img-container{
+        padding: 0;
+        margin-right: 30px;
+    }
+}
+
+@media (min-width : 976px){
+
+}

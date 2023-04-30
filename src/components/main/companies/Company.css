@@ -1,0 +1,39 @@
+.company{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-items: center;
+}
+.company-img-container{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.company-img{
+    width: 100%;
+    opacity: 0.2;
+    cursor: pointer;
+    padding: 25px;
+}
+.company-img:hover{
+    opacity: 1;
+}
+
+@media (min-width : 576px){
+    .company{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+}
+@media (min-width : 768px){
+    .company-img{
+        width: 170px;
+    } 
+}
+
+@media (min-width : 976px){
+    .company{
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+}
